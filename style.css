@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Poppins ;
+}
+body{
+    display: grid;
+    /* grid-template-columns:100% ; */
+}
+.flex{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    gap: 2rem;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+header nav{
+    background: #212529;
+    color: white;
+    padding:   1.2rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+section{
+    height: 100vh;
+}
+.startSec {
+    overflow: hidden;  
+}
+.startSec img {
+    object-fit:cover;
+    height: 100vh;
+    filter: blur(5px);
+    width: 100%;
+    transform: scale(1.1); 
+}
+.myImg{
+    position: absolute;
+    top: 0;
+    left: -7.4rem;
+} 
+.MyDetails{
+    position: absolute;
+    top: 0;
+    display: flex;
+}
