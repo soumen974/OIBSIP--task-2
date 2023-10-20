@@ -8,12 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;1,200&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,200&display=swap" rel="stylesheet">
   
 </head>
-<body>
+<script src="script.js"></script>
+
+<body id="main">
     <header>
-        <nav class="flex">
+        <nav class="nav" >
             <div class="name">Soumen Bhunia</div>
             <div class="navlinks">
-                <ul class="flex">
+                <ul>
                     <li><a href="">SKILLS</a></li>
                     <li><a href="">PORTFOLIO</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -22,11 +24,15 @@
                 </ul>
             </div>
             <div class="mySocials">
-                <ul class="flex">
-                    <li>tweet</li>
-                    <li>git</li>
-                    <li>Linkdin</li>
+                <ul >
+                    <li><a href=""><img src="./Assats/Icon-4.svg" alt=""></a></li>
+                    <li><a href=""><img src="./Assats/Icon-2.svg" alt=""></a></li>
+                    <li><a href=""><img src="./Assats/Icon-3.svg" alt=""></a></li>
                 </ul>
+            </div>
+            <div class="openMenu">
+                <label for="OpenMenu"></label>
+                <input type="checkbox" name="" id="OpenMenu">
             </div>
 
         </nav>
@@ -37,15 +43,22 @@
             <div class="startSec">
                 <img src="./Assats/start_bg.jpg" alt="">
             </div>
-            <div class="text_content">
-                <img class="myImg" id="myImg" src="./Assats/myImg.png" alt="">
+            <div class="text_content" id="container">
+                <img class="myImg"  id="myImg" src="./Assats/myImg.png" alt="">
                 <div class="MyDetails">
-                    <div class="myName">Soumen Bhunia</div>
+                    <div class="myPrfs">Soumen Bhunia
+                        <h1>Frontend Developer & Ui Designer </h1>
+
+                    </div>
+                    <button>TELL ME MORE</button>
+                    
                 </div>
             </div>
             
         </section>
+        <section>
+            
+        </section>
     </main>
-    
 </body>
 </html>
