@@ -7,25 +7,111 @@ body{
     display: grid;
     /* grid-template-columns:100% ; */
 }
-.flex{
+.navlinks ul{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: space-around;
-    gap: 2rem;
+    gap: 2vw;
+    padding: 0.21rem;
+    align-items: center;
+}
+.navlinks ul li:first-child:before{
+   content: "";
+   position: absolute;
+   background-color: #0D6EFD;
+   /* padding: 0.4rem; */
+   top: 3.3rem;
+   left: 30.4rem;
+   height: 0.1rem;
+   width:4rem;
+}
+.mySocials ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    gap: 2vw;
+}
+.mySocials ul li img {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+.mySocials ul li{
+    background: #0D6EFD;
+    padding: 0.4rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+
 }
 a{
     text-decoration: none;
     color: white;
 
 }
-header nav{
-    background: #212529;
+.name{
+    font-size: 1.2rem;
+    color: skyblue;
+}
+header .nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    background: #03031b;
     color: white;
-    padding:   1.2rem 0;
+    padding:   0.7rem 0;
     position: fixed;
     width: 100%;
     z-index: 999;
 }
+
+.nav.scrolled {
+    background-color: transparent;
+}
+.openMenu{
+    display: none;
+}
+.openMenu input{
+    display: none;
+}
+.openMenu label::before{
+    content: "";
+    position: absolute;
+    top: 1.8rem;
+    background: white;
+    box-shadow: 0rem 0.6rem 0 #0D6EFD;
+    border-radius: 0.1rem;
+    height: .3rem;
+    width:  1.8rem;
+    
+}
+.openMenu label::after{
+    content: "";
+    border-radius: 0.1rem;
+    position: absolute;
+    top: 1.2rem;
+    background: white;
+    height: .3rem;
+    width:  1.8rem;
+    
+}
+@media (max-width:825px) {
+    .navlinks ul{
+        display: none;
+    }
+    .mySocials ul{
+        display: none;
+    }
+    .openMenu{
+        display: block;
+    }
+    
+}
+
+
+/* ---------------nav end---------------- */
 section{
     height: 100vh;
 }
@@ -43,9 +129,46 @@ section{
     position: absolute;
     top: 0;
     left: -7.4rem;
+    filter: drop-shadow(0 0 3rem #65a3ff53);
+    transition: transform 0.3s;
+    transform: skewY(0deg) skewX(0deg);
 } 
+.myImg:hover{
+    /* transform-origin: 100% 0; */
+    transform: skewY(3deg) skewX(1deg);
+    transition: transform 0.3s;
+}
+
+.text_content{
+    display: flex;
+    justify-content: space-around;
+    
+}
 .MyDetails{
     position: absolute;
-    top: 0;
+    color: white;
+    left: 40rem;
+    top: 10rem;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 50vh;
+    font-size: 2rem;
+}
+.MyDetails button{
+    width:fit-content;
+    padding:  0.6rem 1.4rem;
+    background: #0D6EFD;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+}
+.myPrfs{
+    text-align: center;
+    
+}
+.myPrfs h1{
+    width: 40rem;
 }
