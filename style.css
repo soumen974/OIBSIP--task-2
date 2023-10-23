@@ -5,6 +5,14 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
 }
 .nav{
     display: flex;
@@ -129,7 +137,7 @@ color: #0D6EFD;
     height: 11vw;
     position: absolute;
     left: 4vw;
-    top: 114vh;
+    top: 124vh;
     border: 0.51px solid #05F;
     border-radius: 50%;
     background: #05F;
@@ -183,4 +191,50 @@ line-height: 2rem;
     border: none;
     border-radius: 8rem;
     background: #05F;
+}
+
+/* ------------------Projects---------------- */
+.ProjectSec{
+    display: flex;
+    gap: 1rem;
+    box-sizing:content-box;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    
+}
+.leftSider{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leftSider h1{
+transform: rotate(-90deg);
+color: #EDECEC;
+font-size: 11vw;
+padding: 0;
+margin: 0;
+}
+.RightSider {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+.RightSider h1{
+    font-size: 3.8vw;
+}
+.RightSider h1 span{
+    color: #9D9D9D;}
+
+.RightSider ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+.RightSider ul li img{
+    height: 25vw;
 }
