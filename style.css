@@ -227,7 +227,8 @@ margin: 0;
     font-size: 3.8vw;
 }
 .RightSider h1 span{
-    color: #9D9D9D;}
+    color: rgb(93, 146, 251);
+}
 
 .RightSider ul{
     display: flex;
@@ -237,4 +238,88 @@ margin: 0;
 }
 .RightSider ul li img{
     height: 25vw;
+}
+.RightSider ul li:first-child:before{
+    display: none;
+    content: "Resumen Builder Web App";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    position: absolute;
+    /* top: 0; */
+    background:rgba(0, 85, 255, 0.815);
+    padding: 4.2vw;
+    height: 3vw;
+    width: 8.2vw;
+    border-radius: 0.3rem;
+
+   
+}
+.RightSider ul li:nth-child(2)::before{
+    display: none;
+    content: "Placement Module";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    position: absolute;
+    /* top: 0; */
+    background:rgba(0, 85, 255, 0.815);
+    padding: 4.2vw;
+    height: 3vw;
+    width: 8.2vw;
+    border-radius: 0.3rem;
+
+}
+.RightSider ul li:nth-child(3)::before{
+    display: none;
+    content: "Fashion Landing Page";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    position: absolute;
+    /* top: 0; */
+    background:rgba(0, 85, 255, 0.815);
+    padding: 4.2vw;
+    height: 3vw;
+    width: 8.2vw;
+    border-radius: 0.3rem;
+
+}
+.RightSider ul li:nth-child(4)::before{
+    display: none;
+    content: "Cube E-Commerce Site ";
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    position: absolute;
+    /* top: 0; */
+    background:rgba(0, 85, 255, 0.815);
+    padding: 4.2vw;
+    height: 3vw;
+    width: 8.2vw;
+    border-radius: 0.3rem;
+}
+.RightSider ul li:hover::before {
+    display: block;
+    animation: fade-in .9s ease forwards;
+}
+
+@keyframes fade-in {
+    from {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(50%);
+        opacity: 1;
+    }
+   
 }
