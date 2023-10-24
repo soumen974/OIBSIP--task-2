@@ -72,6 +72,7 @@ main{
     gap: 0.92rem;
     align-items: center;
 }
+
 a{
     color: #000;
     cursor: pointer;
