@@ -9,11 +9,46 @@
 
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+  }
+ 
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 85, 255, 0.76); 
+     border-radius: 10px; 
+     
+  }
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #05F; 
+}
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+ }
+  
+ 
+
 main{
     display: flex;
     flex-direction: column;
     gap: 7rem;
 }
+
+.goTOtop {
+    display: none;
+}
+
+#goToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+
+}
+
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -26,9 +61,12 @@ main{
     
 }
 .ConnectMe button{
-    background: transparent;
-    padding: .4rem 2rem;
+    border: 1px solid black ;
+    color: black;
+    padding: 0.4rem 2rem ;
     border-radius: 8rem;
+    background: transparent;
+    cursor: pointer;
 }
 a{
     color: #000;
@@ -122,6 +160,7 @@ color: #0D6EFD;
     border: none;
     border-radius: 5rem;
     padding: 0.7rem 1.9rem;
+    cursor: pointer;
 }
 .HeroUpText button a {
     color: white;
@@ -340,6 +379,8 @@ margin: 0;
     color: #FFF;
     justify-content: space-around;
 }
+
+  
 .skillSec ul{
     display: flex;
     justify-content: space-between;
@@ -423,6 +464,7 @@ border: none;
     padding: 0.4rem 2rem ;
     border-radius: 8rem;
     background: transparent;
+    cursor: pointer;
 }
 .footBottom{
     display: flex;
@@ -430,14 +472,7 @@ border: none;
 }
 
 
-.goTOtop {
-    display: none;
-}
 
-#goToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
 
-}
+
+  
