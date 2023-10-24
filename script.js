@@ -1,9 +1,22 @@
-const navbar = document.querySelector(".nav");
+document.addEventListener("DOMContentLoaded", function() {
+    const goToTopButton = document.getElementById('goToTop');    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= window.innerHeight) {
+            goToTopButton.classList.remove('goTOtop');
+        } else {
+            goToTopButton.classList.add('goTOtop');
+        }
+    });
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 20) {
-        navbar.classList.add("scrolled");
-    } else {
-        navbar.classList.remove("scrolled");
+    goToTopButton.addEventListener('click', () => {
+    scrollToTop();
+  });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
+
 });
