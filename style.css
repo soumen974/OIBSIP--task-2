@@ -264,6 +264,7 @@ line-height: 2rem;
     display: flex;
     gap: 0.62rem;
     align-items: center;
+    justify-content: center;
 
 
 }
@@ -312,32 +313,46 @@ line-height: 2rem;
      
     }
     .AboutSec{
-        padding: 0 ;
+        padding: 0rem ;
+        padding-bottom: 1.4rem;
+        height: max-content;
     }
     .aboutText{
         padding: 5rem 6vw;
-        padding-bottom: 2.4rem;
+        padding-bottom: 2rem;
     }
     .aboutText p{
-        width: 88%;
-        font-size: 1.2rem;
-        line-height: 2rem;
+        width: 90%;
+        font-size: .92rem;
+        line-height: 1.9rem;
         }
         .endTnhings ul{
-            display: block;
-            gap: 0.62rem;
+            flex-direction: column;
+            gap: 0.4rem;
             align-items: center;
+            justify-content: space-between;
         
+        
+        }
+        .endTnhings ul li svg{
+          display: flex;
+          height: 1.7rem;
+          width: 1.7rem;
         
         }
         .endTnhings {
             display: flex;
             gap: 2rem;
-            padding-top: 3rem;
+            padding-top: 1.4rem;
             justify-content: space-between;
             align-items: center;
         
         }
+        .aboutText{
+        border: 2px solid #05F;
+        border-top-right-radius: 0vw;
+        border-bottom-left-radius: 10vw;
+    }
 }
 
 /* ------------------Projects---------------- */
