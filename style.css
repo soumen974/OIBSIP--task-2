@@ -394,6 +394,7 @@ margin: 0;
 
 .RightSider ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-top: 2rem;
     gap: 2rem;
@@ -404,8 +405,8 @@ margin: 0;
 .RightSider ul li:first-child:before{
     display: none;
     content: "Resume Builder Web App";
-    text-align: center;
-    color: white;
+    justify-content: center;
+    align-items: center;    color: white;
     font-size: 1vw;
     position: absolute;
     /* top: 0; */
@@ -413,16 +414,14 @@ margin: 0;
     padding: 4.2vw;
     height: 4vw;
     width: 8.2vw;
-    border-radius: 0.3rem;
-
-   
+    border-radius: 0.3rem; 
 }
 .RightSider ul li:nth-child(2)::before{
     display: none;
     content: "Placement Module";
     color: white;
-    text-align: center;
-    font-size: 1vw;
+    justify-content: center;
+    align-items: center;    font-size: 1vw;
     position: absolute;
     /* top: 0; */
     background:rgba(0, 85, 255, 0.815);
@@ -435,9 +434,8 @@ margin: 0;
 .RightSider ul li:nth-child(3)::before{
     display: none;
     content: "Fashion Landing Page";
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     color: white;
     font-size: 1vw;
     position: absolute;
@@ -452,9 +450,8 @@ margin: 0;
 .RightSider ul li:nth-child(4)::before{
     display: none;
     content: "Cube E-Commerce Site ";
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     color: white;
     font-size: 1vw;
     position: absolute;
@@ -466,7 +463,7 @@ margin: 0;
     border-radius: 0.3rem;
 }
 .RightSider ul li:hover::before {
-    display: block;
+    display: flex;
     animation: upTo .9s ease forwards;
 }
 
@@ -488,6 +485,52 @@ margin: 0;
 .RightSider a:hover{
     text-decoration: none;
 }
+
+
+@media (max-width:600px) {
+    .RightSider ul li img{
+        height: 45vw;
+    }
+
+    .RightSider ul li:first-child:before{
+    
+    font-size: 4vw;
+    height: 36.6vw;
+    width: 21.4vw;
+   }
+   .RightSider ul li:nth-child(2):before{
+    font-size: 4vw;
+    height: 36.6vw;
+    width: 21.4vw;
+   }
+   .RightSider ul li:nth-child(3):before{
+    font-size: 4vw;
+    height: 36.6vw;
+    width: 21.4vw;
+   }
+   .RightSider ul li:nth-child(4):before{
+    font-size: 4vw;
+    height: 36.6vw;
+    width: 21.4vw;
+   }
+
+
+@keyframes upTo {
+    from {
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+   
+}
+
+}
+
+
+
 
 /* ------------skillSec---------------------- */
 .skillSec{
