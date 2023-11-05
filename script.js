@@ -1,5 +1,13 @@
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function() {
-    const goToTopButton = document.getElementById('goToTop');    
+    const goToTopButton = document.getElementById('goToTop');
+
     window.addEventListener('scroll', () => {
         if (window.scrollY >= window.innerHeight) {
             goToTopButton.classList.remove('goTOtop');
@@ -9,14 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     goToTopButton.addEventListener('click', () => {
-    scrollToTop();
-  });
-
-    function scrollToTop() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }
-
+        scrollToTop();
+    });
 });
